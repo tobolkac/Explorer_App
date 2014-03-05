@@ -22,7 +22,7 @@ public class NavigationDrawerItem {
         this.icon = icon;
     }
 
-    public NavigationDrawerItem(String item, int icon, boolean isCounterVisible)
+    public NavigationDrawerItem(String title, int icon, boolean isCounterVisible, String count)
     {
         this.title = title;
         this.icon = icon;

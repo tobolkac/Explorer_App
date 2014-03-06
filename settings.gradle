@@ -1,1 +1,1 @@
-include ':navigationdrawer'
+include 'explorerapp'

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.claytobolka.explorerapp.progressbar.ProgessBarWithRunnableActivity$PlaceholderFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:max="10"
+        android:padding="4dip" >
+    </ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10"
+        android:padding="4dip"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/progressBar2"
+        android:layout_toRightOf="@+id/progressBar2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" >
+    </TextView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Progress" >
+    </Button>
+
+</RelativeLayout>

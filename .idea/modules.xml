@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExplorerApp.iml" filepath="$PROJECT_DIR$/ExplorerApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" filepath="$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/explorerapp/explorerapp.iml" filepath="$PROJECT_DIR$/explorerapp/explorerapp.iml" />
     </modules>
   </component>
 </project>

@@ -17,12 +17,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.claytobolka.explorerapp.navigaitondrawer.NavigationDrawerActivity"
+            android:name="com.claytobolka.explorerapp.navigationDrawer.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer" >
         </activity>
         <activity
-            android:name="com.claytobolka.explorerapp.progressbar.ProgessBarWithRunnableActivity"
+            android:name="com.claytobolka.explorerapp.progressbar.ProgressBarWithRunnableActivity"
             android:label="@string/title_activity_progess_bar_with_runnable" >
+        </activity>
+        <activity
+            android:name="com.claytobolka.explorerapp.threadsExample.ThreadsExampleActivity"
+            android:label="@string/title_activity_threads_example" >
+        </activity>
+        <activity
+            android:name="com.claytobolka.explorerapp.animationsExample.AnimationsActivity"
+            android:label="@string/title_activity_animations" >
         </activity>
     </application>
 

@@ -11,12 +11,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-import com.claytobolka.explorerapp.navigaitondrawer.NavigationDrawerActivity;
-import com.claytobolka.explorerapp.progressbar.ProgessBarWithRunnableActivity;
+import com.claytobolka.explorerapp.animationsExample.AnimationsActivity;
+import com.claytobolka.explorerapp.navigationDrawer.NavigationDrawerActivity;
+import com.claytobolka.explorerapp.progressbar.ProgressBarWithRunnableActivity;
+import com.claytobolka.explorerapp.threadsExample.ThreadsExampleActivity;
 
 public class MainActivity extends Activity {
 
-    String[] arr = {"Navigation Drawer Example", "Progress Bar with Runnable"};
+    String[] arr = {"Navigation Drawer Example", "Progress Bar with Runnable", "Threads Example", "Broadcast Receiver Example", "Animations Example"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +31,21 @@ public class MainActivity extends Activity {
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            if (position == 0)
-            {
-                Intent intent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
-                startActivity(intent);
-            }
-            if (position == 1)
-            {
-                Intent intent = new Intent(MainActivity.this, ProgessBarWithRunnableActivity.class);
-                startActivity(intent);
-            }
+                switch (position)
+                {
+                    case 0:
+                        startActivity(new Intent(MainActivity.this, NavigationDrawerActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MainActivity.this, ProgressBarWithRunnableActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, ThreadsExampleActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this, AnimationsActivity.class));
+                        break;
+                }
             }
         });
     }

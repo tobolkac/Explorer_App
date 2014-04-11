@@ -37,7 +37,7 @@ public class AnimationFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -84,6 +84,7 @@ public class AnimationFragment extends Fragment {
                 break;
 
         }
+        myAnimation.setRepeatCount(1);
 
         tv = (TextView) root.findViewById(R.id.animation_name);
         tv.setText(animationType);

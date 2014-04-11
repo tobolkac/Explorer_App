@@ -19,11 +19,10 @@ public class AnimationsActivity extends FragmentActivity {
         setContentView(R.layout.activity_animations);
 
 
-
         Fragment fragment = new AnimationListFragment();
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.animation_main_frame, fragment).commit();
+                .replace(R.id.animation_main_frame, fragment).addToBackStack(null).commit();
 
 
     }
@@ -43,6 +42,12 @@ public class AnimationsActivity extends FragmentActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        if (id == android.R.id.home)
+        {
+            getFragmentManager().popBackStack();
+            getActionBar().setDisplayHomeAsUpEnabled(false);
+            getActionBar().setHomeButtonEnabled(false);
+        }
         if (id == R.id.action_settings) {
             return true;
         }

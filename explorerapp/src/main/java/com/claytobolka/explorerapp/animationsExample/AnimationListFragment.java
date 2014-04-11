@@ -54,7 +54,7 @@ public class AnimationListFragment extends Fragment {
                 Fragment fragment = new AnimationFragment(animationNames[position], position);
                 FragmentManager fragmentManager = getActivity().getFragmentManager();
                 fragmentManager.beginTransaction()
-                        .replace(R.id.animation_main_frame, fragment).commit();
+                        .replace(R.id.animation_main_frame, fragment).addToBackStack(null).commit();
             }
         });
 

@@ -32,21 +32,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
             <Button android:id="@+id/cameraFullScreenStartButton"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
                 android:text="Picture" />
             <ImageView
                 android:id="@+id/previewImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/black_overlay"
                 android:layout_alignParentRight="true"/>
 
         </RelativeLayout>

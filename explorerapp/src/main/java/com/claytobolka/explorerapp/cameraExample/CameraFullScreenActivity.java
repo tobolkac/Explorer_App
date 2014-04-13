@@ -185,6 +185,8 @@ public class CameraFullScreenActivity extends Activity implements SurfaceHolder.
             Bitmap bitmapPicture
                     = BitmapFactory.decodeByteArray(arg0, 0, arg0.length);
 
+            ImageView pre = (ImageView) findViewById(R.id.previewImage);
+
             Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmapPicture, bitmapPicture.getWidth()
             , bitmapPicture.getHeight(), true);
 
@@ -192,9 +194,9 @@ public class CameraFullScreenActivity extends Activity implements SurfaceHolder.
             matrix.postRotate(90);
 
             Bitmap rotatedBitmap = Bitmap.createBitmap(scaledBitmap, 0, 0,
-                    scaledBitmap .getWidth(), scaledBitmap .getHeight(), matrix, true);
+                    scaledBitmap.getWidth(), scaledBitmap.getHeight(), matrix, true);
 
-            ImageView pre = (ImageView) findViewById(R.id.previewImage);
+            
             pre.setImageBitmap(rotatedBitmap);
 
             camera.startPreview();

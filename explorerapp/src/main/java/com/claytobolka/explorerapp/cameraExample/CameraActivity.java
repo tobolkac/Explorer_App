@@ -112,6 +112,9 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
+        camera.stopPreview();
+        camera.release();
+        camera = null;
 
     }
 }

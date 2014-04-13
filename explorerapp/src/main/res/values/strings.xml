@@ -9,5 +9,9 @@
     <string name="title_activity_threads_example">Threads Example</string>
     <string name="title_activity_animations">AnimationsActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_camera_full_screen">CameraFullScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

@@ -44,7 +44,6 @@ public class AnimationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_animation, container, false);
-        // Inflate the layout for this fragment
 
 
         switch (position)
@@ -84,7 +83,6 @@ public class AnimationFragment extends Fragment {
                 break;
 
         }
-        myAnimation.setRepeatCount(1);
 
         tv = (TextView) root.findViewById(R.id.animation_name);
         tv.setText(animationType);

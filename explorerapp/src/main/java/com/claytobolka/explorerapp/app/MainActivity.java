@@ -12,13 +12,17 @@ import android.widget.ListView;
 
 
 import com.claytobolka.explorerapp.animationsExample.AnimationsActivity;
+import com.claytobolka.explorerapp.cameraExample.CameraActivity;
+import com.claytobolka.explorerapp.cameraExample.CameraFullScreenActivity;
 import com.claytobolka.explorerapp.navigationDrawer.NavigationDrawerActivity;
 import com.claytobolka.explorerapp.progressbar.ProgressBarWithRunnableActivity;
 import com.claytobolka.explorerapp.threadsExample.ThreadsExampleActivity;
 
 public class MainActivity extends Activity {
 
-    String[] arr = {"Navigation Drawer Example", "Progress Bar with Runnable", "Threads Example", "Broadcast Receiver Example", "Animations Example"};
+    String[] arr = {"Navigation Drawer Example", "Progress Bar with Runnable", "Threads Example",
+            "Broadcast Receiver Example", "Animations Example", "Camera Example (Surface View)",
+            "Camera Example (Surface View) - Full Screen"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +48,12 @@ public class MainActivity extends Activity {
                         break;
                     case 4:
                         startActivity(new Intent(MainActivity.this, AnimationsActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(MainActivity.this, CameraActivity.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(MainActivity.this, CameraFullScreenActivity.class));
                         break;
                 }
             }
